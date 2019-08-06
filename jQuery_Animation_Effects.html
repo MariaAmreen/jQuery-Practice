@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Animate Method</title>
+	<link rel="stylesheet" type="text/css" href="jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src = "jquery-3.4.1.min.js" type="text/javascript"></script>
+	
+</head>
+<body>
+	<h1 style="text-align: center;">JQUERY ANIMATE METHOD</h1>
+	<hr>
+	<p style="text-align: center;"><strong>Click to Animate this Box!</strong></p>
+	<button id = "animate" type="button" class="btn btn-sm btn-danger" style="margin-left: 650px;">Click Me</button>
+	<div id = "animateDiv" style="height: 150px; width: 150px; border: 5px solid black; background-color: red; margin-left: 610px; margin-top: 20px; position: relative;"></div>
+	
+<script>
+	//Animation usin jquery
+$(document).ready(function(){
+		$('#animate').click(function(){
+			$('#animateDiv').animate({
+			left : 500
+			});
+
+			$('#animateDiv').animate({
+			top : 250
+			});
+
+			$('#animateDiv').animate({
+			top : 250,
+			left: 0
+			});
+
+			$('#animateDiv').animate({
+			top : 0,
+			left : 0
+			});
+		});
+});
+</script>
+
+<script src="js/bootstrap.js"  type="text/javascript" ></script>
+<script src ="jquery-ui.min.js" type="text/javascript"></script>
+
+</body>
+</html>

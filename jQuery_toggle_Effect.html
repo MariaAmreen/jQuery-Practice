@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Events</title>
+	<script src = "jquery-3.4.1.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<p><strong>Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me Toggle Me </strong></p><br>
+
+<button id = "one">click me once!</button><br>
+<hr>
+<!-- slidedown and slide up -->
+<p> Slide down and Slideup Effect in jQuery</p>
+<button id = "flip">click to slide down the panel!</button>
+<div id = "panel" style = "display: none">Hello World</div>
+<hr>
+<!-- fadein and fadeout and Fade toggle-->
+ <p>with jQuery you can fade an element in and out of visibility</p>
+ <button id ="fadeout">Fade Out</button>
+ <button id ="fadein">Fade In</button><br>
+ <button id ="fadeToggle" style="margin: 10px; margin-left: 0px;">Fade Toggle(fade in and fade out using a single button)</button>
+
+<hr>
+<div id = "firstDiv" style = "width: 150px; height: 100px; background-color: red;"></div>
+<br>
+<div id = "secondDiv" style = "width: 150px; height: 100px; background-color: blue;"></div>
+<br>
+<div id = "thirdDiv" style = "width: 150px; height: 100px; background-color: green;"></div>
+
+<script>
+//toggle Effect
+
+$(document).ready(function(){
+	$('#one').click(function(){
+		$('p').toggle('slow');
+	});
+
+	//Slide up and Slide down Effect
+	$('#flip').click(function(){
+		$('#panel').slideDown('slow');
+	});
+	$('#flip').dblclick(function(){
+		$('#panel').slideUp('slow');		
+	});
+	//Fading Effects
+	$('#fadeout').click(function(){
+		$('#firstDiv').fadeOut(1000);
+		$('#secondDiv').fadeOut(2000);
+		$('#thirdDiv').fadeOut(3000);
+	});
+	$('#fadein').click(function(){
+		$('#firstDiv').fadeIn(1000);
+		$('#secondDiv').fadeIn(2000);
+		$('#thirdDiv').fadeIn(3000);
+	});
+	//Fade Toggle
+	$('#fadeToggle').click(function(){
+		$('#firstDiv').fadeToggle(1000);
+		$('#secondDiv').fadeToggle(2000);
+		$('#thirdDiv').fadeToggle(3000);
+	});
+});	
+
+</script>
+
+</body>
+</html>

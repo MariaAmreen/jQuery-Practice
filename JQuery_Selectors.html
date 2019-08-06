@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Selectors</title>
+		<script src = "jquery-3.4.1.min.js" type="text/javascript"></script>
+		
+	</head>
+<body>
+	<p id = "test" style = "background-color: #0CF86D; color: white;">Hello! How are you?</p>
+	<br>
+	<p class = "test2" style = "background-color: #0CBFF8; color: white;">I am fine! what about you?</p>
+	<br>
+
+	<ul>
+		<li style="background-color: #F80C70; color: white;">what are you doing right now?</li>
+<br>
+		<li style="background-color: #D40CF8; color: white;">i am doing nothing</li>
+
+	</ul>
+		<button id = "hideandseek" style = "background-color: #0C17F8; color: white; border: none; padding: 10px;">click me</button>
+  
+	<script>
+ 		$(document).ready(function(){
+ 			$('#hideandseek').click(function(){
+ 				$('li:first').hide();
+ 			});
+ 			// body...
+ 		});
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PopUp</title>
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<button onclick="popup()" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">Click Me!</button>
+
+</body>
+<script>
+	function popup(){
+		swal({
+  title: "Sorry",
+  text: "Answer is Incorrect",
+  icon: "warning",
+  button: "Try Again!",
+});
+	}
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery CSS</title>
+		<script src = "jquery-3.4.1.min.js" type="text/javascript"></script>
+		
+	</head>
+<body>
+	<a href = "#" id = "anchor"> Welcom to jQuery multiple css methods</a>
+	<br>
+		<button id = "jQuerycss">click me</button>
+  
+	<script>
+ 		$(document).ready(function(){
+ 			//sytanx for single css property
+ 			$('#anchor').css("textDecoration","none")
+
+ 			$('#jQuerycss').click(function(){
+ 				//syntax for multiple css properties
+ 				$('#anchor').css({
+ 					"backgroundColor":"yellow",
+ 					"color":"red"
+ 				});
+ 			});
+ 		});
+	</script>
+</body>
+
+</html>
